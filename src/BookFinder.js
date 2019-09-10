@@ -1,4 +1,5 @@
 import React from "react";
+import "./BookFinder.css";
 
 // Components
 import SearchForm from "./SearchForm";
@@ -46,6 +47,7 @@ export default class BookFinder extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <h1>BOOK FINDER</h1>
         <SearchForm
           handleInputUpdate={e => this.updateSearchQuery(e.target.value)}
           handleSubmit={e => this.getBookDataFromAPI(e)}

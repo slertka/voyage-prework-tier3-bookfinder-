@@ -1,14 +1,86 @@
 .book-card {
-  border: 1px solid black;
-  border-radius: 5%;
-  padding: 15px;
-  display: inline-block;
-  width: 20%;
-  height: 400px;
+  border: 0.5px solid lightgrey;
+  box-shadow: 1px 1px 1px #ccc;
+  height: 225px;
+  background: rgb(252, 252, 252);
 
-  margin: 10px;
+  flex: 1 0 500px;
+  margin: 1rem 0.25em;
+
+  position: relative;
 }
 
 .book-card p {
-  font-size: 0.5rem;
+  padding: 5px;
+  margin: 0;
+  text-align: left;
+}
+
+.book-card a {
+}
+
+.book-image {
+  box-shadow: 3px 3px 1px #ccc;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: -20px;
+}
+
+.book-info {
+  position: absolute;
+  width: 65%;
+  right: 10px;
+  height: 200px;
+  overflow: scroll;
+}
+
+.book-title {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: rgb(56, 56, 56);
+  margin-top: 10px !important;
+}
+
+.book-author,
+.book-publisher {
+  font-size: 0.75rem;
+  color: rgb(80, 80, 80);
+  padding: 1px !important;
+}
+
+.book-more-info-btn {
+  margin-top: 15px;
+  height: 35px;
+  width: 150px;
+  font-size: 0.75rem;
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+}
+
+@media screen and (max-width: 414px) {
+  .book-card {
+    flex: 0 1 100%;
+  }
+
+  .book-image {
+    width: 33%;
+  }
+
+  .book-info {
+    width: 57%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .book-card {
+    max-width: calc(50% - 1em);
+  }
+
+  .book-info {
+    width: 50%;
+  }
 }

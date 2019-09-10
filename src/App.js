@@ -7,7 +7,9 @@ import BookFinder from "./BookFinder";
 function App() {
   return (
     <div className="App">
-      <BookFinder />
+      <div className="centered">
+        <BookFinder />
+      </div>
     </div>
   );
 }
