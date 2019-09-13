@@ -24,7 +24,8 @@
   display: inline-block;
   position: absolute;
   left: 10px;
-  top: -20px;
+  top: -10px;
+  width: 128px;
 }
 
 .book-info {
@@ -82,5 +83,22 @@
 
   .book-info {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .book-image {
+    left: 35px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .book-card {
+    max-width: calc(33% - 1em);
+  }
+
+  .book-image {
+    width: 100px;
+    left: 25px;
   }
 }

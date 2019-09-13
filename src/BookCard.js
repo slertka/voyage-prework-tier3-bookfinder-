@@ -21,7 +21,9 @@ export default function BookCard(props) {
             : `By: No authors found`}
         </p>
         <p className="book-publisher">
-          Published By: {props.volumeInfo.publisher}
+          {props.volumeInfo.publisher
+            ? `Published By: ${props.volumeInfo.publisher}`
+            : `Published By: No publishers found`}
         </p>
         <a
           href={props.volumeInfo.infoLink}
