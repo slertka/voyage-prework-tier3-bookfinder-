@@ -13,6 +13,7 @@ export default class BookFinder extends React.Component {
     searchQuery: "",
     isLoading: false,
     searchExecuted: false,
+    unknownErr: false,
     bookData: []
   };
 
@@ -44,8 +45,12 @@ export default class BookFinder extends React.Component {
           bookData: resj.items
         });
       })
-      .catch(err =>
-        alert(`Something may have gone wrong! Try again. Ref: ${err}`)
+      .catch(() =>
+        this.setState({
+          searchExecuted: true,
+          isLoading: false,
+          unknownErr: true
+        })
       );
   };
 
@@ -69,14 +74,18 @@ export default class BookFinder extends React.Component {
           {this.state.searchExecuted &&
             this.state.bookData &&
             this.state.bookData.map(book => (
-              <BookCard volumeInfo={book.volumeInfo} />
+              <BookCard
+                volumeInfo={book.volumeInfo}
+                key={`book-result-${book.volumeInfo.title}`}
+              />
             ))}
-
-          {/* this.state.bookData.map(book => (
-              <BookCard volumeInfo={book.volumeInfo} /> */}
 
           {this.state.searchExecuted && !this.state.bookData && (
             <h2>No results found. Try a different search term!</h2>
+          )}
+
+          {this.state.searchExecuted && this.state.unknownErr && (
+            <h2>Something went wrong. Please try again.</h2>
           )}
         </div>
       </React.Fragment>
