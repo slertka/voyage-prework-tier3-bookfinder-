@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/voyage-prework-tier3-bookfinder/static/css/main.8d465c55.chunk.css",
+    "main.js": "/voyage-prework-tier3-bookfinder/static/js/main.2f53798d.chunk.js",
+    "main.js.map": "/voyage-prework-tier3-bookfinder/static/js/main.2f53798d.chunk.js.map",
+    "runtime~main.js": "/voyage-prework-tier3-bookfinder/static/js/runtime~main.f9cddbf0.js",
+    "runtime~main.js.map": "/voyage-prework-tier3-bookfinder/static/js/runtime~main.f9cddbf0.js.map",
+    "static/js/2.a776114d.chunk.js": "/voyage-prework-tier3-bookfinder/static/js/2.a776114d.chunk.js",
+    "static/js/2.a776114d.chunk.js.map": "/voyage-prework-tier3-bookfinder/static/js/2.a776114d.chunk.js.map",
+    "index.html": "/voyage-prework-tier3-bookfinder/index.html",
+    "precache-manifest.7005a0eda77745b1518de4161b4b1cd6.js": "/voyage-prework-tier3-bookfinder/precache-manifest.7005a0eda77745b1518de4161b4b1cd6.js",
+    "service-worker.js": "/voyage-prework-tier3-bookfinder/service-worker.js",
+    "static/css/main.8d465c55.chunk.css.map": "/voyage-prework-tier3-bookfinder/static/css/main.8d465c55.chunk.css.map"
+  }
+}
