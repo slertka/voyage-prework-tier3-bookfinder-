@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/voyage-prework-tier3-bookfinder/precache-manifest.7005a0eda77745b1518de4161b4b1cd6.js"
+  "/voyage-prework-tier3-bookfinder/precache-manifest.5d3265e81dac3183d1d3b6d129fd4ad5.js"
 );
 
 self.addEventListener('message', (event) => {
