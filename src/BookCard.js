@@ -11,7 +11,7 @@ export default function BookCard(props) {
           className="book-image"
         />
       ) : (
-        <img src="" alt="No thumnail found for book" className="book-image" />
+        <img src="" alt="No thumbnail available" className="book-image" />
       )}
       <div className="book-info">
         <p className="book-title">{props.volumeInfo.title}</p>
